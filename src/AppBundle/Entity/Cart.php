@@ -46,5 +46,101 @@ class Cart
     private $idcustomer;
 
 
+
+    /**
+     * Get the value of idcart
+     *
+     * @return  integer
+     */ 
+    public function getIdcart()
+    {
+        return $this->idcart;
+    }
+
+    /**
+     * Set the value of idcart
+     *
+     * @param  integer  $idcart
+     *
+     * @return  self
+     */ 
+    public function setIdcart($idcart)
+    {
+        $this->idcart = $idcart;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of totalamout
+     *
+     * @return  float
+     */ 
+    public function getTotalamout()
+    {
+        return $this->totalamout;
+    }
+
+    /**
+     * Set the value of totalamout
+     *
+     * @param  float  $totalamout
+     *
+     * @return  self
+     */ 
+    public function setTotalamout(float $totalamout)
+    {
+        $this->totalamout = $totalamout;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of state
+     *
+     * @return  string
+     */ 
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * Set the value of state
+     *
+     * @param  string  $state
+     *
+     * @return  self
+     */ 
+    public function setState(string $state)
+    {
+        $this->state = $state;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idcustomer
+     *
+     * @return  \Customer
+     */ 
+    public function getIdcustomer()
+    {
+        return $this->idcustomer;
+    }
+
+    /**
+     * Set the value of idcustomer
+     *
+     * @param  \Customer  $idcustomer
+     *
+     * @return  self
+     */ 
+    public function setIdcustomer(\Customer $idcustomer)
+    {
+        $this->idcustomer = $idcustomer;
+
+        return $this;
+    }
 }
 

@@ -49,5 +49,101 @@ class Cartitem
     private $idcart;
 
 
+
+    /**
+     * Get the value of idcartitem
+     *
+     * @return  integer
+     */ 
+    public function getIdcartitem()
+    {
+        return $this->idcartitem;
+    }
+
+    /**
+     * Set the value of idcartitem
+     *
+     * @param  integer  $idcartitem
+     *
+     * @return  self
+     */ 
+    public function setIdcartitem($idcartitem)
+    {
+        $this->idcartitem = $idcartitem;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of quantity
+     *
+     * @return  integer
+     */ 
+    public function getQuantity()
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * Set the value of quantity
+     *
+     * @param  integer  $quantity
+     *
+     * @return  self
+     */ 
+    public function setQuantity($quantity)
+    {
+        $this->quantity = $quantity;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idproduct
+     *
+     * @return  \Product
+     */ 
+    public function getIdproduct()
+    {
+        return $this->idproduct;
+    }
+
+    /**
+     * Set the value of idproduct
+     *
+     * @param  \Product  $idproduct
+     *
+     * @return  self
+     */ 
+    public function setIdproduct(\Product $idproduct)
+    {
+        $this->idproduct = $idproduct;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idcart
+     *
+     * @return  \Cart
+     */ 
+    public function getIdcart()
+    {
+        return $this->idcart;
+    }
+
+    /**
+     * Set the value of idcart
+     *
+     * @param  \Cart  $idcart
+     *
+     * @return  self
+     */ 
+    public function setIdcart(\Cart $idcart)
+    {
+        $this->idcart = $idcart;
+
+        return $this;
+    }
 }
 

@@ -46,5 +46,101 @@ class Category
     private $parentcategory;
 
 
+
+    /**
+     * Get the value of idcategory
+     *
+     * @return  integer
+     */ 
+    public function getIdcategory()
+    {
+        return $this->idcategory;
+    }
+
+    /**
+     * Set the value of idcategory
+     *
+     * @param  integer  $idcategory
+     *
+     * @return  self
+     */ 
+    public function setIdcategory($idcategory)
+    {
+        $this->idcategory = $idcategory;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of name
+     *
+     * @return  string
+     */ 
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set the value of name
+     *
+     * @param  string  $name
+     *
+     * @return  self
+     */ 
+    public function setName(string $name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of description
+     *
+     * @return  string
+     */ 
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set the value of description
+     *
+     * @param  string  $description
+     *
+     * @return  self
+     */ 
+    public function setDescription(string $description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of parentcategory
+     *
+     * @return  \Category
+     */ 
+    public function getParentcategory()
+    {
+        return $this->parentcategory;
+    }
+
+    /**
+     * Set the value of parentcategory
+     *
+     * @param  \Category  $parentcategory
+     *
+     * @return  self
+     */ 
+    public function setParentcategory(\Category $parentcategory)
+    {
+        $this->parentcategory = $parentcategory;
+
+        return $this;
+    }
 }
 

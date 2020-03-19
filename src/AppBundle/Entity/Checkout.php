@@ -74,5 +74,197 @@ class Checkout
     private $idcart;
 
 
+
+    /**
+     * Get the value of idcheckout
+     *
+     * @return  integer
+     */ 
+    public function getIdcheckout()
+    {
+        return $this->idcheckout;
+    }
+
+    /**
+     * Set the value of idcheckout
+     *
+     * @param  integer  $idcheckout
+     *
+     * @return  self
+     */ 
+    public function setIdcheckout($idcheckout)
+    {
+        $this->idcheckout = $idcheckout;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of address
+     *
+     * @return  string
+     */ 
+    public function getAddress()
+    {
+        return $this->address;
+    }
+
+    /**
+     * Set the value of address
+     *
+     * @param  string  $address
+     *
+     * @return  self
+     */ 
+    public function setAddress(string $address)
+    {
+        $this->address = $address;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of city
+     *
+     * @return  string
+     */ 
+    public function getCity()
+    {
+        return $this->city;
+    }
+
+    /**
+     * Set the value of city
+     *
+     * @param  string  $city
+     *
+     * @return  self
+     */ 
+    public function setCity(string $city)
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of country
+     *
+     * @return  string
+     */ 
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set the value of country
+     *
+     * @param  string  $country
+     *
+     * @return  self
+     */ 
+    public function setCountry(string $country)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of locationdetail
+     *
+     * @return  string
+     */ 
+    public function getLocationdetail()
+    {
+        return $this->locationdetail;
+    }
+
+    /**
+     * Set the value of locationdetail
+     *
+     * @param  string  $locationdetail
+     *
+     * @return  self
+     */ 
+    public function setLocationdetail(string $locationdetail)
+    {
+        $this->locationdetail = $locationdetail;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of deliverymethod
+     *
+     * @return  string
+     */ 
+    public function getDeliverymethod()
+    {
+        return $this->deliverymethod;
+    }
+
+    /**
+     * Set the value of deliverymethod
+     *
+     * @param  string  $deliverymethod
+     *
+     * @return  self
+     */ 
+    public function setDeliverymethod(string $deliverymethod)
+    {
+        $this->deliverymethod = $deliverymethod;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of totalamout
+     *
+     * @return  float
+     */ 
+    public function getTotalamout()
+    {
+        return $this->totalamout;
+    }
+
+    /**
+     * Set the value of totalamout
+     *
+     * @param  float  $totalamout
+     *
+     * @return  self
+     */ 
+    public function setTotalamout(float $totalamout)
+    {
+        $this->totalamout = $totalamout;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idcart
+     *
+     * @return  \Cart
+     */ 
+    public function getIdcart()
+    {
+        return $this->idcart;
+    }
+
+    /**
+     * Set the value of idcart
+     *
+     * @param  \Cart  $idcart
+     *
+     * @return  self
+     */ 
+    public function setIdcart(\Cart $idcart)
+    {
+        $this->idcart = $idcart;
+
+        return $this;
+    }
 }
 
