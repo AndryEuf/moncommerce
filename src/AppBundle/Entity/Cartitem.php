@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Cartitem
  *
  * @ORM\Table(name="cartitem", indexes={@ORM\Index(name="fk_product_idx", columns={"idProduct"}), @ORM\Index(name="fk_cart_idx", columns={"idCart"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CartitemRepository")
  */
 class Cartitem
 {

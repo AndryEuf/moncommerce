@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Checkout
  *
  * @ORM\Table(name="checkout", indexes={@ORM\Index(name="fk_cart_idx", columns={"idCart"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CheckoutRepository")
  */
 class Checkout
 {
