@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block  categoriemenu %}
+  <div id="navigation" class="navbar-collapse collapse">
+<ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown"><a href="{{ path('homepage') }}" >Home <b class="caret"></b></a></li>
+        <li class="nav-item dropdown"><a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Contact <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="contact.html" class="nav-link">Contact option 1</a></li>
+            <li class="dropdown-item"><a href="contact2.html" class="nav-link">Contact option 2</a></li>
+            <li class="dropdown-item"><a href="contact3.html" class="nav-link">Contact option 3</a></li>
+        </ul>
+        </li>
+        <li class="nav-item dropdown"><a href="{{ path('cart') }}" >Cart <b class="caret"></b></a></li>
+        <!-- ========== Contact dropdown end ==================-->
+    </ul>
+  </div>
+{% endblock %}
+  
+{% block body %}
+  <div id="heading-breadcrumbs">
+    <div class="container">
+      <div class="row d-flex align-items-center flex-wrap">
+        <div class="col-md-7">
+          <h1 class="h2">White Blouse Armani</h1>
+        </div>
+        <div class="col-md-5">
+          <ul class="breadcrumb d-flex justify-content-end">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="shop-category.html">Ladies</a></li>
+            <li class="breadcrumb-item"><a href="shop-category.html">Tops</a></li>
+            <li class="breadcrumb-item active">White Blouse Armani</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div class="container">
+      <div class="row bar">
+        <div class="col-lg-9">
+          <div id="productMain" class="row">
+            <div class="col-sm-6">
+              <div data-slider-id="1" class="owl-carousel shop-detail-carousel">
+                <div> <img src="{{ asset('assets/img/detailbig1.jpg') }}" alt="" class="img-fluid"></div>
+                <div> <img src="{{ asset('assets/img/detailbig2.jpg') }}" alt="" class="img-fluid"></div>
+                <div> <img src="{{ asset('assets/img/detailbig3.jpg') }}" alt="" class="img-fluid"></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="box">
+                <form>
+                  <div class="sizes">
+                    <h3>Available sizes</h3>
+                    <select class="bs-select">
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                      <option value="x-large">X Large</option>
+                    </select>
+                  </div>
+                  <p class="price">$124.00</p>
+                  <p class="text-center">
+                    <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                    <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-default"><i class="fa fa-heart-o"></i></button>
+                  </p>
+                </form>
+              </div>
+              <div data-slider-id="1" class="owl-thumbs">
+                <button class="owl-thumb-item"><img src="{{ asset('assets/img/detailsquare.jpg') }}" alt="" class="img-fluid"></button>
+                <button class="owl-thumb-item"><img src="{{ asset('assets/img/detailsquare2.jpg') }}" alt="" class="img-fluid"></button>
+                <button class="owl-thumb-item"><img src="{{ asset('assets/img/detailsquare3.jpg') }}" alt="" class="img-fluid"></button>
+              </div>
+            </div>
+          </div>
+          <div id="details" class="box mb-4 mt-4">
+            <p></p>
+            <h4>Product details</h4>
+            <p>White lace top, woven, has a round neck, short sleeves, has knitted lining attached</p>
+            <h4>Material & care</h4>
+            <ul>
+              <li>Polyester</li>
+              <li>Machine wash</li>
+            </ul>
+            <h4>Size & Fit</h4>
+            <ul>
+              <li>Regular fit</li>
+              <li>The model (height 5'8 "and chest 33") is wearing a size S</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
